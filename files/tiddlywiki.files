@@ -1,10 +1,10 @@
 {
 	"tiddlers": [
 		{
-			"file": "markdown.js",
+			"file": "asciidoctor.js",
 			"fields": {
 				"type": "application/javascript",
-				"title": "$:/plugins/tiddlywiki/markdown/markdown.js",
+				"title": "$:/plugins/tiddlywiki/asciidoctor/asciidoctor.js",
 				"module-type": "library"
 			}
 		}

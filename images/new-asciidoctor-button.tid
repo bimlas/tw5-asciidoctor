@@ -1,7 +1,7 @@
-title: $:/plugins/tiddlywiki/markdown/images/new-markdown-button
+title: $:/plugins/tiddlywiki/asciidoctor/images/new-asciidoctor-button
 tags: $:/tags/Image
 
-<svg class="tc-image-new-markdown-button tc-image-button" viewBox="0 0 128 128" width="22pt" height="22pt">
+<svg class="tc-image-new-asciidoctor-button tc-image-button" viewBox="0 0 128 128" width="22pt" height="22pt">
     <g fill-rule="evenodd">
         <rect x="80" y="96" width="48" height="16" rx="8"></rect>
         <rect x="96" y="80" width="16" height="48" rx="8"></rect>
