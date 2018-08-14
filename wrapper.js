@@ -1,9 +1,12 @@
 /*\
-title: $:/plugins/tiddlywiki/markdown/wrapper.js
+title: $:/plugins/tiddlywiki/asciidoctor/wrapper.js
 type: application/javascript
 module-type: parser
 
-Wraps up the markdown-js parser for use in TiddlyWiki5
+Wraps up the Asciidoctor.js parser for use in TiddlyWiki5
+
+TODO: Export to my namespace
+https://tiddlywiki.com/dev/static/Developing%2520plugins%2520using%2520Node.js%2520and%2520GitHub.html
 
 \*/
 (function(){
@@ -12,7 +15,7 @@ Wraps up the markdown-js parser for use in TiddlyWiki5
 /*global $tw: false */
 "use strict";
 
-var markdown = require("$:/plugins/tiddlywiki/markdown/markdown.js");
+var asciidoctor_parser = require("$:/plugins/tiddlywiki/asciidoctor/asciidoctor")();
 
 var CONFIG_DIALECT_TIDDLER = "$:/config/markdown/dialect",
 	DEFAULT_DIALECT = "Gruber";
@@ -66,10 +69,10 @@ function transformNode(node) {
 	}
 }
 
-var MarkdownParser = function(type,text,options) {
+var AsciidoctorParser = function(type,text,options) {
 	var dialect = options.wiki.getTiddlerText(CONFIG_DIALECT_TIDDLER,DEFAULT_DIALECT),
-		markdownTree = markdown.toHTMLTree(text,dialect),
-		node = $tw.utils.isArray(markdownTree[1]) ? markdownTree.slice(1) : markdownTree.slice(2);
+		node = asciidoctor_parser.convert(text);
+    // TODO: Built in function for HTML -> HTMLTree? JsonMl?
 	this.tree = transformNodes(node);
 };
 
@@ -83,7 +86,6 @@ var MarkdownParser = function(type,text,options) {
 
 */
 
-exports["text/x-markdown"] = MarkdownParser;
+exports["text/asciidoc"] = AsciidoctorParser;
 
 })();
-
