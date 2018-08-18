@@ -16,6 +16,7 @@ https://tiddlywiki.com/dev/static/Developing%2520plugins%2520using%2520Node.js%2
 "use strict";
 
 var asciidoctor_parser = require("$:/plugins/tiddlywiki/asciidoctor/asciidoctor")();
+var jsonml = require("$:/plugins/tiddlywiki/asciidoctor/jsonml-dom");
 
 var CONFIG_DIALECT_TIDDLER = "$:/config/markdown/dialect",
 	DEFAULT_DIALECT = "Gruber";
@@ -71,9 +72,10 @@ function transformNode(node) {
 
 var AsciidoctorParser = function(type,text,options) {
 	var dialect = options.wiki.getTiddlerText(CONFIG_DIALECT_TIDDLER,DEFAULT_DIALECT),
-		node = asciidoctor_parser.convert(text);
-    // TODO: Built in function for HTML -> HTMLTree? JsonMl?
-	this.tree = transformNodes(node);
+		html_text = asciidoctor_parser.convert(text),
+        node_tree = jsonml.fromHTMLText(html_text, null),
+        tiddler_tree = transformNodes(node_tree);
+    this.tree = tiddler_tree;
 };
 
 /*

@@ -7,15 +7,13 @@
 
 	Copyright (c)2006-2012 Stephen M. McKamey
 	Distributed under The MIT License: http://jsonml.org/license
+
+	https://github.com/mckamey/jsonml/blob/master/jsonml-dom.js
 */
 
-var JsonML = JsonML || {};
+(function(){
+    var JsonML = JsonML || {};
 
-if (typeof module === 'object') {
-    module.exports = JsonML;
-}
-
-(function(JsonML, document){
     'use strict';
 
     var addChildren = function(/*DOM*/ elem, /*function*/ filter, /*JsonML*/ jml) {
@@ -48,7 +46,7 @@ if (typeof module === 'object') {
             case 1:  // element
             case 9:  // document
             case 11: // documentFragment
-                jml = [elem.tagName||''];
+                jml = [elem.tagName.toLowerCase()||''];
 
                 var attr = elem.attributes,
                     props = {},
@@ -143,9 +141,11 @@ if (typeof module === 'object') {
                 // free references
                 elem = null;
                 return jml;
-            case 3: // text node
+            case 3: // text node, or a simple newline in the case of Asciidoctor
+                    // See the .childNodes of a <div> element
+                    // https://stackoverflow.com/a/18850683
             case 4: // CDATA node
-                var str = String(elem.nodeValue);
+                var str = String(elem.nodeValue.replace(/^\n$/, ''));
                 // free references
                 elem = null;
                 return str;
@@ -201,7 +201,7 @@ if (typeof module === 'object') {
      * @param {function} filter
      * @return {array} JsonML
      */
-    JsonML.fromHTMLText = function(html, filter) {
+    var fromHTMLText = JsonML.fromHTMLText = function(html, filter) {
         var elem = document.createElement('div');
         elem.innerHTML = html;
 
@@ -210,13 +210,10 @@ if (typeof module === 'object') {
         // free references
         elem = null;
 
-        if (jml.length === 2) {
-            return jml[1];
-        }
-
         // make wrapper a document fragment
-        jml[0] = '';
+        jml.shift();
         return jml;
     };
 
-})(JsonML, document);
+    module.exports = JsonML;
+})();
