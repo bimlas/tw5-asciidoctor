@@ -1,14 +1,14 @@
-title: $:/core/ui/EditorToolbar/subscript
+title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/subscript
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/subscript
-caption: {{$:/language/Buttons/Subscript/Caption}}
+caption: {{$:/language/Buttons/Subscript/Caption}} (Asciidoctor)
 description: {{$:/language/Buttons/Subscript/Hint}}
-condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+condition: [<targetTiddler>type[text/asciidoc]]
 shortcuts: ((subscript))
 
 <$action-sendmessage
 	$message="tm-edit-text-operation"
 	$param="wrap-selection"
-	prefix=",,"
-	suffix=",,"
+	prefix="~"
+	suffix="~"
 />

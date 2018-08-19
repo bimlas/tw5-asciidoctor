@@ -1,14 +1,14 @@
-title: $:/core/ui/EditorToolbar/strikethrough
+title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/strikethrough
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/strikethrough
-caption: {{$:/language/Buttons/Strikethrough/Caption}}
+caption: {{$:/language/Buttons/Strikethrough/Caption}} (Asciidoctor)
 description: {{$:/language/Buttons/Strikethrough/Hint}}
-condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+condition: [<targetTiddler>type[text/asciidoc]]
 shortcuts: ((strikethrough))
 
 <$action-sendmessage
 	$message="tm-edit-text-operation"
 	$param="wrap-selection"
-	prefix="~~"
-	suffix="~~"
+	prefix="+++<strike>"
+	suffix="</strike>+++"
 />

@@ -1,14 +1,14 @@
-title: $:/core/ui/EditorToolbar/heading-3
+title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/heading-3
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/heading-3
-caption: {{$:/language/Buttons/Heading3/Caption}}
+caption: {{$:/language/Buttons/Heading3/Caption}} (Asciidoctor)
 description: {{$:/language/Buttons/Heading3/Hint}}
-condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+condition: [<targetTiddler>type[text/asciidoc]]
 shortcuts: ((heading-3))
 
 <$action-sendmessage
 	$message="tm-edit-text-operation"
 	$param="prefix-lines"
-	character="!"
+	character="="
 	count="3"
 />

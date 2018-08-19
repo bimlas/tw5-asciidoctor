@@ -1,9 +1,8 @@
-title: $:/core/ui/EditorToolbar/picture
+title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/picture
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/picture
-caption: {{$:/language/Buttons/Picture/Caption}}
+caption: {{$:/language/Buttons/Picture/Caption}} (Asciidoctor)
 description: {{$:/language/Buttons/Picture/Hint}}
-condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+condition: [<targetTiddler>type[text/asciidoc]]
 shortcuts: ((picture))
-dropdown: $:/core/ui/EditorToolbar/picture-dropdown
-
+dropdown: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/picture-dropdown

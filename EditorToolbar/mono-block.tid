@@ -1,9 +1,9 @@
-title: $:/core/ui/EditorToolbar/mono-block
+title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/mono-block
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/mono-block
-caption: {{$:/language/Buttons/MonoBlock/Caption}}
+caption: {{$:/language/Buttons/MonoBlock/Caption}} (Asciidoctor)
 description: {{$:/language/Buttons/MonoBlock/Hint}}
-condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+condition: [<targetTiddler>type[text/asciidoc]]
 button-classes: tc-text-editor-toolbar-item-start-group
 shortcuts: ((mono-block))
 
@@ -11,6 +11,6 @@ shortcuts: ((mono-block))
 	$message="tm-edit-text-operation"
 	$param="wrap-lines"
 	prefix="
-```"
-	suffix="```"
+...."
+	suffix="...."
 />

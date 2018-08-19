@@ -1,4 +1,5 @@
-title: $:/core/ui/EditorToolbar/excise-dropdown
+// TODO: Work in progress
+title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/excise-dropdown
 
 \define lingo-base() $:/language/Buttons/Excise/
 
@@ -17,6 +18,7 @@ title: $:/core/ui/EditorToolbar/excise-dropdown
 
 <$checkbox tiddler="""$config-title$/tagnew""" field="text" checked="yes" unchecked="no" default="false"> <<lingo Caption/Tag>></$checkbox>
 
+// TODO: Override to use Asciidoctor syntax; set up new tiddler's type to text/asciidoc
 <<lingo Caption/Replace>> <$select tiddler="""$config-title$/type""" default="transclude">
 <option value="link"><<lingo Caption/Replace/Link>></option>
 <option value="transclude"><<lingo Caption/Replace/Transclusion>></option>

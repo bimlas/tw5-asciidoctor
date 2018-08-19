@@ -1,14 +1,14 @@
-title: $:/core/ui/EditorToolbar/italic
+title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/italic
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/italic
-caption: {{$:/language/Buttons/Italic/Caption}}
+caption: {{$:/language/Buttons/Italic/Caption}} (Asciidoctor)
 description: {{$:/language/Buttons/Italic/Hint}}
-condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+condition: [<targetTiddler>type[text/asciidoc]]
 shortcuts: ((italic))
 
 <$action-sendmessage
 	$message="tm-edit-text-operation"
 	$param="wrap-selection"
-	prefix="//"
-	suffix="//"
+	prefix="_"
+	suffix="_"
 />

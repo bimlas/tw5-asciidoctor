@@ -1,14 +1,14 @@
-title: $:/core/ui/EditorToolbar/bold
+title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/bold
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/bold
-caption: {{$:/language/Buttons/Bold/Caption}}
+caption: {{$:/language/Buttons/Bold/Caption}} (Asciidoctor)
 description: {{$:/language/Buttons/Bold/Hint}}
-condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+condition: [<targetTiddler>type[text/asciidoc]]
 shortcuts: ((bold))
 
 <$action-sendmessage
 	$message="tm-edit-text-operation"
 	$param="wrap-selection"
-	prefix="''"
-	suffix="''"
+	prefix="*"
+	suffix="*"
 />

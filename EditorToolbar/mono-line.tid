@@ -1,9 +1,9 @@
-title: $:/core/ui/EditorToolbar/mono-line
+title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/mono-line
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/mono-line
-caption: {{$:/language/Buttons/MonoLine/Caption}}
+caption: {{$:/language/Buttons/MonoLine/Caption}} (Asciidoctor)
 description: {{$:/language/Buttons/MonoLine/Hint}}
-condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+condition: [<targetTiddler>type[text/asciidoc]]
 shortcuts: ((mono-line))
 
 <$action-sendmessage

@@ -1,9 +1,9 @@
-title: $:/core/ui/EditorToolbar/excise
+// TODO: Work in progress
+title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/excise
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/excise
-caption: {{$:/language/Buttons/Excise/Caption}}
+caption: {{$:/language/Buttons/Excise/Caption}} (Asciidoctor)
 description: {{$:/language/Buttons/Excise/Hint}}
-condition: [<targetTiddler>type[]] [<targetTiddler>type[text/vnd.tiddlywiki]] +[first[]]
+condition: [<targetTiddler>type[text/asciidoc]]
 shortcuts: ((excise))
-dropdown: $:/core/ui/EditorToolbar/excise-dropdown
-
+dropdown: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/excise-dropdown

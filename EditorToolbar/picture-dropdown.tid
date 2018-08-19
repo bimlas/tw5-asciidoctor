@@ -1,7 +1,7 @@
-title: $:/core/ui/EditorToolbar/picture-dropdown
+title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/picture-dropdown
 
 \define replacement-text()
-[img[$(imageTitle)$]]
+image::$(imageTitle)$[]
 \end
 
 ''{{$:/language/Buttons/Picture/Hint}}''

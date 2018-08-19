@@ -1,10 +1,11 @@
-caption: {{$:/language/Buttons/Transcludify/Caption}}
-condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+// TODO: Work in progress
+caption: {{$:/language/Buttons/Transcludify/Caption}} (Asciidoctor)
+condition: [<targetTiddler>type[text/asciidoc]]
 description: {{$:/language/Buttons/Transcludify/Hint}}
 icon: $:/core/images/transcludify
-list-before: $:/core/ui/EditorToolbar/mono-block
+list-before: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/mono-block
 shortcuts: ((transcludify))
-title: $:/core/ui/EditorToolbar/transcludify
+title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/transcludify
 tags: $:/tags/EditorToolbar
 
 <$action-sendmessage

@@ -1,8 +1,10 @@
-title: $:/core/ui/EditorToolbar/link-dropdown
+// TODO: Work in progress
+title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/link-dropdown
 
 \define lingo-base() $:/language/Buttons/Link/
 
 \define add-link-actions()
+// TODO: Override to use Asciidoctor syntax
 <$action-sendmessage $message="tm-edit-text-operation" $param="make-link" text={{$(linkTiddler)$}} />
 <$action-deletetiddler $tiddler=<<dropdown-state>> />
 <$action-deletetiddler $tiddler=<<searchTiddler>> />

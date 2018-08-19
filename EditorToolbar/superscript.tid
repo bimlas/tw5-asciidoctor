@@ -1,14 +1,14 @@
-title: $:/core/ui/EditorToolbar/superscript
+title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/superscript
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/superscript
-caption: {{$:/language/Buttons/Superscript/Caption}}
+caption: {{$:/language/Buttons/Superscript/Caption}} (Asciidoctor)
 description: {{$:/language/Buttons/Superscript/Hint}}
-condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+condition: [<targetTiddler>type[text/asciidoc]]
 shortcuts: ((superscript))
 
 <$action-sendmessage
 	$message="tm-edit-text-operation"
 	$param="wrap-selection"
-	prefix="^^"
-	suffix="^^"
+	prefix="^"
+	suffix="^"
 />
