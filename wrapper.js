@@ -18,9 +18,6 @@ https://tiddlywiki.com/dev/static/Developing%2520plugins%2520using%2520Node.js%2
 var asciidoctor_parser = require("$:/plugins/tiddlywiki/asciidoctor/asciidoctor")();
 var jsonml = require("$:/plugins/tiddlywiki/asciidoctor/jsonml-dom");
 
-var CONFIG_DIALECT_TIDDLER = "$:/config/markdown/dialect",
-	DEFAULT_DIALECT = "Gruber";
-
 function transformNodes(nodes) {
 	var results = [];
 	for(var index=0; index<nodes.length; index++) {
@@ -71,22 +68,11 @@ function transformNode(node) {
 }
 
 var AsciidoctorParser = function(type,text,options) {
-	var dialect = options.wiki.getTiddlerText(CONFIG_DIALECT_TIDDLER,DEFAULT_DIALECT),
-		html_text = asciidoctor_parser.convert(text),
+	var html_text = asciidoctor_parser.convert(text),
         node_tree = jsonml.fromHTMLText(html_text, null),
         tiddler_tree = transformNodes(node_tree);
     this.tree = tiddler_tree;
 };
-
-/*
-
-[ 'html',
-  [ 'p', 'something' ],
-  [ 'h1',
-    'heading and ',
-    [ 'strong', 'other' ] ] ]
-
-*/
 
 exports["text/asciidoc"] = AsciidoctorParser;
 
