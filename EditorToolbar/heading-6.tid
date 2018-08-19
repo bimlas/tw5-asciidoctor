@@ -1,15 +1,14 @@
-title: $:/plugins/tiddlywiki/markdown/EditorToolbar/heading-6
-list-after: $:/core/ui/EditorToolbar/heading-6
+title: $:/core/ui/EditorToolbar/heading-6
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/heading-6
-caption: {{$:/language/Buttons/Heading6/Caption}} (Markdown)
+caption: {{$:/language/Buttons/Heading6/Caption}}
 description: {{$:/language/Buttons/Heading6/Hint}}
-condition: [<targetTiddler>type[text/x-markdown]]
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
 shortcuts: ((heading-6))
 
 <$action-sendmessage
 	$message="tm-edit-text-operation"
 	$param="prefix-lines"
-	character="#"
+	character="!"
 	count="6"
 />

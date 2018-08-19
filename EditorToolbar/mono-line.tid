@@ -1,10 +1,9 @@
-title: $:/plugins/tiddlywiki/markdown/EditorToolbar/mono-line
-list-after: $:/core/ui/EditorToolbar/mono-line
+title: $:/core/ui/EditorToolbar/mono-line
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/mono-line
-caption: {{$:/language/Buttons/MonoLine/Caption}} (Markdown)
+caption: {{$:/language/Buttons/MonoLine/Caption}}
 description: {{$:/language/Buttons/MonoLine/Hint}}
-condition: [<targetTiddler>type[text/x-markdown]]
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
 shortcuts: ((mono-line))
 
 <$action-sendmessage

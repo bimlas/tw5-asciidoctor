@@ -1,15 +1,14 @@
-title: $:/plugins/tiddlywiki/markdown/EditorToolbar/list-number
-list-after: $:/core/ui/EditorToolbar/list-number
+title: $:/core/ui/EditorToolbar/list-number
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/list-number
-caption: {{$:/language/Buttons/ListNumber/Caption}} (Markdown)
+caption: {{$:/language/Buttons/ListNumber/Caption}}
 description: {{$:/language/Buttons/ListNumber/Hint}}
-condition: [<targetTiddler>type[text/x-markdown]]
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
 shortcuts: ((list-number))
 
 <$action-sendmessage
 	$message="tm-edit-text-operation"
 	$param="prefix-lines"
-	character="1."
+	character="#"
 	count="1"
 />
