@@ -1,4 +1,3 @@
-// TODO: Ask Jeremy about the leading hash: is it acceptable?
 caption: {{$:/language/Buttons/Linkify/Caption}} (Asciidoctor)
 condition: [<targetTiddler>type[text/asciidoc]]
 description: {{$:/language/Buttons/Linkify/Hint}}
