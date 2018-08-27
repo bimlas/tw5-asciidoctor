@@ -1,0 +1,19 @@
+image: node
+
+pages:
+  script:
+    - git checkout gl-pages
+    - git clone --depth 1 https://github.com/Jermolene/TiddlyWiki5 tw5
+    - mkdir -p tw5/plugins/bimlas/asciidoctor/
+    - cp -r .git tw5/plugins/bimlas/asciidoctor/.git
+    - cd tw5/plugins/bimlas/asciidoctor/
+    - git checkout master
+    - cd ../../../../
+    - cp -r editions tw5
+    - node tw5/tiddlywiki.js tw5/editions/asciidoctordemo --build index
+    # GitLab needs 'public' dirname for deploy
+    # https://gitlab.com/gitlab-org/gitlab-ee/issues/1719
+    - mv tw5/editions/asciidoctordemo/output public
+  artifacts:
+    paths:
+    - public
