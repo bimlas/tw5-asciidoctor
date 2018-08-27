@@ -1,14 +1,14 @@
 /*
-	jsonml-dom.js
-	HTML to JsonML utility
+jsonml-dom.js
+HTML to JsonML utility
 
-	Created: 2007-02-15-2235
-	Modified: 2012-11-03-2051
+Created: 2007-02-15-2235
+Modified: 2012-11-03-2051
 
-	Copyright (c)2006-2012 Stephen M. McKamey
-	Distributed under The MIT License: http://jsonml.org/license
+Copyright (c)2006-2012 Stephen M. McKamey
+Distributed under The MIT License: http://jsonml.org/license
 
-	https://github.com/mckamey/jsonml/blob/master/jsonml-dom.js
+https://github.com/mckamey/jsonml/blob/master/jsonml-dom.js
 */
 
 (function(){

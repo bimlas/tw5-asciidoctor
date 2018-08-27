@@ -8,7 +8,7 @@
 				"module-type": "library"
 			}
 		},
-        {
+		{
 			"file": "jsonml-dom.js",
 			"fields": {
 				"type": "application/javascript",

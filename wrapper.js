@@ -66,9 +66,9 @@ function transformNode(node) {
 
 var AsciidoctorParser = function(type,text,options) {
 	var html_text = asciidoctor_parser.convert(text),
-        node_tree = jsonml.fromHTMLText(html_text, null),
-        tiddler_tree = transformNodes(node_tree);
-    this.tree = tiddler_tree;
+		node_tree = jsonml.fromHTMLText(html_text, null),
+		tiddler_tree = transformNodes(node_tree);
+	this.tree = tiddler_tree;
 };
 
 exports["text/asciidoc"] = AsciidoctorParser;
