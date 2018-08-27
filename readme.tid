@@ -13,15 +13,3 @@ It is completely self-contained, and doesn't need an Internet connection in orde
 To add the plugin to your own TiddlyWiki5, just drag this link to the browser window:
 
 [[$:/plugins/bimlas/asciidoctor]]
-
-! Asciidoctor reference
-
-The Asciidoctor manual can be found at https://asciidoctor.org/docs/user-manual/
-
-! Creating WikiLinks
-
-Create wiki links with the usual Asciidoctor link syntax targeting `#` and the target tiddler title:
-
-```
-link:#TiddlerTitle[link text]
-```
