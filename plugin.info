@@ -2,6 +2,9 @@
 	"title": "$:/plugins/bimlas/asciidoctor",
 	"description": "Asciidoctor parser",
 	"author": "bimlas",
+	"version": "1.0.0",
 	"core-version": ">=5.0.0",
+	"source": "https://gitlab.com/bimlas/tw5-asciidoctor",
+	"plugin-type": "plugin",
 	"list": "readme usage"
 }

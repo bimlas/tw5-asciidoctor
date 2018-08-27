@@ -1,7 +1,27 @@
 title: $:/plugins/bimlas/asciidoctor/readme
 
+''WARNING! DO NOT INSTALL IN TO YOUR MAIN WIKI - THE PLUGIN WILL BRAKE IT!''
+
 This is a TiddlyWiki plugin for parsing Asciidoctor text, based on the [[Asciidoctor.js|https://github.com/asciidoctor/asciidoctor.js]] project from Asciidoctor Project.
 
 It is completely self-contained, and doesn't need an Internet connection in order to work. It works both in the browser and under Node.js.
 
-[[Source code|https://github.com/Jermolene/TiddlyWiki5/blob/master/plugins/tiddlywiki/asciidoctor]]
+[[Source code|https://gitlab.com/bimlas/tw5-asciidoctor]]
+
+! Installation
+
+To add the plugin to your own TiddlyWiki5, just drag this link to the browser window:
+
+[[$:/plugins/bimlas/asciidoctor]]
+
+! Asciidoctor reference
+
+The Asciidoctor manual can be found at https://asciidoctor.org/docs/user-manual/
+
+! Creating WikiLinks
+
+Create wiki links with the usual Asciidoctor link syntax targeting `#` and the target tiddler title:
+
+```
+link:#TiddlerTitle[link text]
+```
