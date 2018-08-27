@@ -8,6 +8,7 @@ pages:
     - cp -r .git tw5/plugins/bimlas/asciidoctor/.git
     - cd tw5/plugins/bimlas/asciidoctor/
     - git checkout master
+    - rm .gitlab-ci.yml
     - cd ../../../../
     - cp -r editions tw5
     - node tw5/tiddlywiki.js tw5/editions/asciidoctordemo --build index
