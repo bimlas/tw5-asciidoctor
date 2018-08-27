@@ -4,7 +4,7 @@
 			"file": "asciidoctor.js",
 			"fields": {
 				"type": "application/javascript",
-				"title": "$:/plugins/tiddlywiki/asciidoctor/asciidoctor.js",
+				"title": "$:/plugins/bimlas/asciidoctor/asciidoctor.js",
 				"module-type": "library"
 			}
 		},
@@ -12,7 +12,7 @@
 			"file": "jsonml-dom.js",
 			"fields": {
 				"type": "application/javascript",
-				"title": "$:/plugins/tiddlywiki/asciidoctor/jsonml-dom.js",
+				"title": "$:/plugins/bimlas/asciidoctor/jsonml-dom.js",
 				"module-type": "library"
 			}
 		}

@@ -1,4 +1,4 @@
-title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/quote
+title: $:/plugins/bimlas/asciidoctor/EditorToolbar/quote
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/quote
 caption: {{$:/language/Buttons/Quote/Caption}} (Asciidoctor)

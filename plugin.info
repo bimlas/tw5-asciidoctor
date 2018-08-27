@@ -1,5 +1,5 @@
 {
-	"title": "$:/plugins/tiddlywiki/asciidoctor",
+	"title": "$:/plugins/bimlas/asciidoctor",
 	"description": "Asciidoctor parser",
 	"author": "bimlas",
 	"core-version": ">=5.0.0",

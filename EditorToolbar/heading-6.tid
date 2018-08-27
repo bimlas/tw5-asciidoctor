@@ -1,4 +1,4 @@
-title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/heading-6
+title: $:/plugins/bimlas/asciidoctor/EditorToolbar/heading-6
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/heading-6
 caption: {{$:/language/Buttons/Heading6/Caption}} (Asciidoctor)

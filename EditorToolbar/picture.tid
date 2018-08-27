@@ -1,8 +1,8 @@
-title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/picture
+title: $:/plugins/bimlas/asciidoctor/EditorToolbar/picture
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/picture
 caption: {{$:/language/Buttons/Picture/Caption}} (Asciidoctor)
 description: {{$:/language/Buttons/Picture/Hint}}
 condition: [<targetTiddler>type[text/asciidoc]]
 shortcuts: ((picture))
-dropdown: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/picture-dropdown
+dropdown: $:/plugins/bimlas/asciidoctor/EditorToolbar/picture-dropdown

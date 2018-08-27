@@ -1,4 +1,4 @@
-title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/bold
+title: $:/plugins/bimlas/asciidoctor/EditorToolbar/bold
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/bold
 caption: {{$:/language/Buttons/Bold/Caption}} (Asciidoctor)

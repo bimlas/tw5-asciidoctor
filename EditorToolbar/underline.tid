@@ -1,4 +1,4 @@
-title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/underline
+title: $:/plugins/bimlas/asciidoctor/EditorToolbar/underline
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/underline
 caption: {{$:/language/Buttons/Underline/Caption}} (Asciidoctor)

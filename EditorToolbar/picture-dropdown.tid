@@ -1,4 +1,4 @@
-title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/picture-dropdown
+title: $:/plugins/bimlas/asciidoctor/EditorToolbar/picture-dropdown
 
 \define replacement-text()
 image::$(imageTitle)$[]

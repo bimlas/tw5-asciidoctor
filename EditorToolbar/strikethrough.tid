@@ -1,4 +1,4 @@
-title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/strikethrough
+title: $:/plugins/bimlas/asciidoctor/EditorToolbar/strikethrough
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/strikethrough
 caption: {{$:/language/Buttons/Strikethrough/Caption}} (Asciidoctor)

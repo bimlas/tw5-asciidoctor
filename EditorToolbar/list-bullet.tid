@@ -1,4 +1,4 @@
-title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/list-bullet
+title: $:/plugins/bimlas/asciidoctor/EditorToolbar/list-bullet
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/list-bullet
 caption: {{$:/language/Buttons/ListBullet/Caption}} (Asciidoctor)

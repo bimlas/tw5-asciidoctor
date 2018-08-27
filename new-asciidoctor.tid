@@ -1,13 +1,13 @@
-title: $:/plugins/tiddlywiki/asciidoctor/new-asciidoctor-button
+title: $:/plugins/bimlas/asciidoctor/new-asciidoctor-button
 tags: $:/tags/PageControls
-caption: {{$:/plugins/tiddlywiki/asciidoctor/images/new-asciidoctor-button}} {{$:/language/Buttons/NewAsciidoctor/Caption}}
+caption: {{$:/plugins/bimlas/asciidoctor/images/new-asciidoctor-button}} {{$:/language/Buttons/NewAsciidoctor/Caption}}
 description: {{$:/language/Buttons/NewAsciidoctor/Hint}}
 list-after: $:/core/ui/Buttons/new-tiddler
 
 <$button tooltip={{$:/language/Buttons/NewAsciidoctor/Hint}} aria-label={{$:/language/Buttons/NewAsciidoctor/Caption}} class=<<tv-config-toolbar-class>>>
 <$action-sendmessage $message="tm-new-tiddler" type="text/asciidoc"/>
 <$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
-{{$:/plugins/tiddlywiki/asciidoctor/images/new-asciidoctor-button}}
+{{$:/plugins/bimlas/asciidoctor/images/new-asciidoctor-button}}
 </$list>
 <$list filter="[<tv-config-toolbar-text>prefix[yes]]">
 <span class="tc-btn-text"><$text text={{$:/language/Buttons/NewAsciidoctor/Caption}}/></span>

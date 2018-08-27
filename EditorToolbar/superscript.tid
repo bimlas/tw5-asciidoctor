@@ -1,4 +1,4 @@
-title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/superscript
+title: $:/plugins/bimlas/asciidoctor/EditorToolbar/superscript
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/superscript
 caption: {{$:/language/Buttons/Superscript/Caption}} (Asciidoctor)

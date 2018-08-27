@@ -1,4 +1,4 @@
-title: $:/plugins/tiddlywiki/asciidoctor/EditorToolbar/subscript
+title: $:/plugins/bimlas/asciidoctor/EditorToolbar/subscript
 tags: $:/tags/EditorToolbar
 icon: $:/core/images/subscript
 caption: {{$:/language/Buttons/Subscript/Caption}} (Asciidoctor)

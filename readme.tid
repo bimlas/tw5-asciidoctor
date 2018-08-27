@@ -1,4 +1,4 @@
-title: $:/plugins/tiddlywiki/asciidoctor/readme
+title: $:/plugins/bimlas/asciidoctor/readme
 
 This is a TiddlyWiki plugin for parsing Asciidoctor text, based on the [[Asciidoctor.js|https://github.com/asciidoctor/asciidoctor.js]] project from Asciidoctor Project.
 

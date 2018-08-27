@@ -1,12 +1,9 @@
 /*\
-title: $:/plugins/tiddlywiki/asciidoctor/wrapper.js
+title: $:/plugins/bimlas/asciidoctor/wrapper.js
 type: application/javascript
 module-type: parser
 
 Wraps up the Asciidoctor.js parser for use in TiddlyWiki5
-
-TODO: Export to my namespace
-https://tiddlywiki.com/dev/static/Developing%2520plugins%2520using%2520Node.js%2520and%2520GitHub.html
 
 \*/
 (function(){
@@ -15,8 +12,8 @@ https://tiddlywiki.com/dev/static/Developing%2520plugins%2520using%2520Node.js%2
 /*global $tw: false */
 "use strict";
 
-var asciidoctor_parser = require("$:/plugins/tiddlywiki/asciidoctor/asciidoctor")();
-var jsonml = require("$:/plugins/tiddlywiki/asciidoctor/jsonml-dom");
+var asciidoctor_parser = require("$:/plugins/bimlas/asciidoctor/asciidoctor")();
+var jsonml = require("$:/plugins/bimlas/asciidoctor/jsonml-dom");
 
 function transformNodes(nodes) {
 	var results = [];
