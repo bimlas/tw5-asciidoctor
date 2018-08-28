@@ -12,7 +12,11 @@ Wraps up the Asciidoctor.js parser for use in TiddlyWiki5
 /*global $tw: false */
 "use strict";
 
-var asciidoctor_parser = require("$:/plugins/bimlas/asciidoctor/asciidoctor")();
+var asciidoctor_parser = require("$:/plugins/bimlas/asciidoctor/asciidoctor")({
+  runtime: {
+    ioModule: 'xmlhttprequest'
+  }
+});
 var jsonml = require("$:/plugins/bimlas/asciidoctor/jsonml-dom");
 
 function transformNodes(nodes) {
