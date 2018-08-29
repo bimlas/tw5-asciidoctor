@@ -20,3 +20,7 @@ I cannot found a solution to
 ```
 include::TiddlerTitle[]
 ```
+
+! Drag-n-drop files
+
+Asciidoc mime type is [[not registered yet|https://github.com/asciidoctor/asciidoctor/issues/2502]], thus drag-n-drop the files does not sets filetype automatically, you have to do it manually.
