@@ -1,6 +1,6 @@
 title: $:/plugins/bimlas/asciidoctor/readme
 
-''WARNING! DO NOT INSTALL IN TO YOUR MAIN WIKI - THE PLUGIN WILL BRAKE IT!''
+''WARNING! DO NOT INSTALL IN TO YOUR MAIN WIKI - THE PLUGIN WILL BRAKE IT! See https://github.com/asciidoctor/asciidoctor.js/issues/539''
 
 This is a TiddlyWiki plugin for parsing Asciidoctor text, based on the [[Asciidoctor.js|https://github.com/asciidoctor/asciidoctor.js]] project from Asciidoctor Project.
 
