@@ -13,14 +13,25 @@ Create wiki links with the usual Asciidoctor link syntax targeting `#` and the t
 link:#TiddlerTitle[link text]
 ```
 
-! Include (transclusion) of tiddlers does not works
+! Include (transclusion)
 
-I cannot found a solution to
+I cannot found a solution to transclude tiddlers in to Asciidoctor documents
 
 ```
 include::TiddlerTitle[]
 ```
 
+but embedding Asciidoctor tiddlers in general ones works normally.
+
+```
+{{AsciidoctorTiddler}}
+```
+
+! Internal links
+
+The dynamically generated intra-tiddler links does not work, try out the footnote
+in the example: TiddlyWiki threats it as a link to another tiddler.
+
 ! Drag-n-drop files
 
-Asciidoc mime type is [[not registered yet|https://github.com/asciidoctor/asciidoctor/issues/2502]], thus drag-n-drop the files does not sets filetype automatically, you have to do it manually.
+Asciidoc mime type is [[not registered yet|https://github.com/asciidoctor/asciidoctor/issues/2502]], thus drag-n-drop the files does not set filetype automatically, you have to do it manually.
