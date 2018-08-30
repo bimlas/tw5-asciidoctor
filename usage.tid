@@ -30,7 +30,7 @@ but embedding Asciidoctor tiddlers in general ones works normally.
 ! Internal links
 
 The dynamically generated intra-tiddler links does not work, try out the footnote
-in the example: TiddlyWiki threats it as a link to another tiddler.
+in the example: TiddlyWiki interprets it as a link to another tiddler.
 
 ! Drag-n-drop files
 
