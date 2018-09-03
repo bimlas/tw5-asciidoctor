@@ -1,19 +1,20 @@
 image: node
 
 pages:
+  variables:
+    TIDDLYWIKI_PLUGIN_PATH: plugins
   script:
-    - git clone --depth 1 https://github.com/Jermolene/TiddlyWiki5 tw5
-    - cp -r editions plugins tw5
+    - npm install -g tiddlywiki
     # Generate as index.html: single HTML demo page
-    - node tw5/tiddlywiki.js tw5/editions/asciidoctordemo --build index
+    - tiddlywiki editions/asciidoctordemo --build index
     # Generate as .json file: drag-n-drop installer for single HTML
-    - node tw5/tiddlywiki.js tw5/editions/asciidoctordemo --savetiddler '$:/plugins/bimlas/asciidoctor' tw5-asciidoctor.json
+    - tiddlywiki editions/asciidoctordemo --savetiddler '$:/plugins/bimlas/asciidoctor' tw5-asciidoctor.json
     # Generate as .tid file: drag-n-drop installer for node version
     # DOES NOT WORKS - exports as JSON
-    # - node tw5/tiddlywiki.js tw5/editions/asciidoctordemo --savetiddler '$:/plugins/bimlas/asciidoctor' tw5-asciidoctor.tid
+    # - tiddlywiki editions/asciidoctordemo --savetiddler '$:/plugins/bimlas/asciidoctor' tw5-asciidoctor.tid
     # GitLab needs 'public' dirname for deploy
     # https://gitlab.com/gitlab-org/gitlab-ee/issues/1719
-    - mv tw5/editions/asciidoctordemo/output public
+    - mv editions/asciidoctordemo/output public
   artifacts:
     paths:
     - public
