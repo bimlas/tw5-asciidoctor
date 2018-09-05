@@ -1,4 +1,38 @@
+:edition: editions/asciidoctordemo
+:demo-page: https://bimlas.gitlab.io/tw5-asciidoctor
+:json: https://bimlas.gitlab.io/tw5-asciidoctor/tw5-asciidoctor.json
+
 = Asciidoctor plugin for TiddlyWiki 5
 
-* *Demo page:* https://bimlas.gitlab.io/tw5-asciidoctor
-* *Download as JSON file:* https://bimlas.gitlab.io/tw5-asciidoctor/tw5-asciidoctor.json
+For details, see the link:{demo-page}[demo page].
+
+== How to install?
+
+=== Drag-n-drop
+
+- Open the link:{demo-page}[demo page]
+- Drag-n-drop the plugin tiddler in to your wiki
+
+=== Download as JSON
+
+- Download the link:{json}[JSON archive of the plugin] (_File -> Save as_ when
+  loaded)
+- Drag-n-drop the file in to your wiki
+
+== How to use in Node version of TiddlyWiki
+
+=== TiddlyWiki installed via NPM
+
+- Clone or download this repository
+- Run `export TIDDLYWIKI_PLUGIN_PATH=plugins ; tiddlywiki {edition} --server`
+  in the root of this repository
+- Open `localhost:8080` in your browser
+
+=== Main TiddlyWiki repository
+
+- Clone or download this repository
+- Clone or download https://github.com/Jermolene/TiddlyWiki5
+- Copy the contents of this repository (expect _.git_ directory) to
+  TiddlyWiki5 repo
+- Run `node tiddlywiki.js {edition} --server`
+- Open `localhost:8080` in your browser
