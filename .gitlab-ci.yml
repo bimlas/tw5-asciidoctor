@@ -7,11 +7,8 @@ pages:
     - npm install -g tiddlywiki
     # Generate as index.html: single HTML demo page
     - tiddlywiki editions/asciidoctordemo --build index
-    # Generate as .json file: drag-n-drop installer for single HTML
-    - tiddlywiki editions/asciidoctordemo --savetiddler '$:/plugins/bimlas/asciidoctor' tw5-asciidoctor.json
-    # Generate as .tid file: drag-n-drop installer for node version
-    # DOES NOT WORKS - exports as JSON
-    # - tiddlywiki editions/asciidoctordemo --savetiddler '$:/plugins/bimlas/asciidoctor' tw5-asciidoctor.tid
+    # Generate as .json file: drag-n-drop installer
+    - tiddlywiki editions/asciidoctordemo --render '$:/plugins/bimlas/asciidoctor' tw5-asciidoctor.json text/plain '$:/core/templates/json-tiddler'
     # Serve a compressed version to speed up the loading
     # https://gitlab.com/gitlab-org/gitlab-pages/merge_requests/25
     - gzip --recursive --keep editions/asciidoctordemo
