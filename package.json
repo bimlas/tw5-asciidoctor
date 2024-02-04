@@ -1,0 +1,12 @@
+{
+  "name": "tw5-asciidoctor",
+  "author": "bimlas",
+  "scripts": {
+    "build": "npm run build:html; npm run build:json",
+    "build:html": "TIDDLYWIKI_PLUGIN_PATH=plugins tiddlywiki editions/asciidoctordemo --build index",
+    "build:json": "TIDDLYWIKI_PLUGIN_PATH=plugins tiddlywiki editions/asciidoctordemo --render '$:/plugins/bimlas/asciidoctor' tw5-asciidoctor.json text/plain '$:/core/templates/json-tiddler'"
+  },
+  "dependencies": {
+    "tiddlywiki": "^5.3.3"
+  }
+}

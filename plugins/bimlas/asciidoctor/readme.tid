@@ -4,7 +4,7 @@ This is a TiddlyWiki plugin for parsing Asciidoctor text, based on the [[Asciido
 
 It is completely self-contained, and doesn't need an Internet connection in order to work. It works both in the browser and under Node.js.
 
-[[Source code|https://gitlab.com/bimlas/tw5-asciidoctor]]
+[[Source code|https://github.com/bimlas/tw5-asciidoctor]]
 
 ! Installation
 

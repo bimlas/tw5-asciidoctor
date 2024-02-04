@@ -1,6 +1,6 @@
 :edition: editions/asciidoctordemo
-:demo-page: https://bimlas.gitlab.io/tw5-asciidoctor
-:json: https://bimlas.gitlab.io/tw5-asciidoctor/tw5-asciidoctor.json
+:demo-page: https://bimlas.github.io/tw5-asciidoctor
+:json: https://bimlas.github.io/tw5-asciidoctor/tw5-asciidoctor.json
 
 = Asciidoctor plugin for TiddlyWiki 5
 
